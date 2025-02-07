@@ -1,0 +1,16 @@
+body {
+    background-image:url(./components/images/overlay.png);
+    background-size:cover;
+    height:318vh;
+    background-repeat:no-repeat;
+}
+
+@media screen and (max-width:599px) {
+body{
+  
+    height:173vh;
+}
+
+
+}
+

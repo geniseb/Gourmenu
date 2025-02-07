@@ -1,0 +1,11 @@
+.exampleModalBtn{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.moveMyExampleModal{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}

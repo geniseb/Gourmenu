@@ -1,0 +1,239 @@
+#fullContainer {
+  /* display:flex;
+  flex-direction: row; */
+  height: 100vh;
+  /* border:5px solid aqua; */
+}
+
+.search {
+  font-family: Felix Titling;
+  color: rgb(40, 1, 1);
+  margin-left: 29%;
+
+}
+
+.searchbutton {
+  margin-left: 7px;
+  background-color: #9D260B;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 5%;
+  border-radius: 6px;
+  font-size: medium;
+}
+
+.searchbutton:hover {
+  background-color: #FD7A5D;
+  font-weight: bold;
+}
+
+input[type=text] {
+  width: 35%;
+  padding: 10px 20px;
+  margin: 6px 0;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  font-family: 'times new roman';
+  font-size: 16px;
+}
+
+#invisibleDiv {
+  height: 1731px;
+  margin-left: 29%;
+  width: 45vw;
+}
+
+.cardSkeleton {
+  width: 45vw;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #9D260B;
+  font-size: 80%;
+  font-family: 'papyrus';
+}
+
+.cardContainer {
+  justify-content: flex-start;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 4px solid #FD7A5D;
+  background-color: white;
+  border-radius: 6px;
+  color: #7e240f;
+  position: relative;
+  width: 25%;
+}
+.header{
+  font-size: large;
+}
+
+.imageSize {
+  width: 100%;
+  border-bottom-style: double;
+}
+
+.header {
+  text-align: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+  border-radius: 6px;
+  font-family: 'DejaVu Sans' !important;
+  font-size: 14px !important;
+}
+
+.overlayText {
+  color: #7e240f;
+  font-size: 1.5vh;
+  position: absolute;
+  top: 55%;
+  left: 35%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.cardContainer:hover .overlay {
+  opacity: 1;
+  z-index: 1;
+  margin-bottom: 105%;
+  width: 100%;
+  top: -3px;
+  bottom: 0;
+  height: 99.5%;
+  font-family: 'DejaVu Sans';
+  font-size: 100%;
+  line-height: 2;
+}
+
+.groceryListButton {
+  margin-left: 45px;
+  background-color: #9D260B;
+  border: none;
+  color: white;
+  padding: 8px;
+  width: 79%;
+  border-radius: 6px;
+}
+
+.groceryListButton:hover {
+  background-color: #FD7A5D;
+  font-weight: bold;
+}
+
+.groceryListButton2:hover {
+  background-color: #FD7A5D;
+  font-weight: bold;
+}
+
+/* @media screen and (max-width: 1900px) and (min-width:1201px) { */
+
+  /* .cardSkeleton {}
+
+  .cardContainer {} */
+
+  /* .overlayText {
+    font-size: 7px;
+    height: 2px;
+    position: absolute;
+    top: 55%;
+    left: 35%;
+  } */
+
+  /* .searchbutton {
+    width: 7vw;
+  } */
+
+  /* .groceryList {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 8px;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .groceryListButton {
+    font-size: 7px;
+  }
+} */
+
+
+
+@media screen and (max-width:599px) {
+  #ingredientSearch {
+    font-size: .5vw;
+    padding: 2.5vw;
+    text-align: center;
+  }
+
+  input[type=text] {
+    width: 59%;
+    padding: 2px 20px;
+    margin: 6px;
+    margin-right: 5%;
+    box-sizing: border-box;
+  }
+
+  .search {
+    font-family: Felix Titling;
+    color: rgb(40, 1, 1);
+    margin-left: -1%;
+  }
+
+  .searchbutton {
+    width: 15.2vw;
+    padding: 1vw;
+    font-size: small;
+  }
+
+  #invisibleDiv {
+    height: 1731px;
+    margin-left: 0%;
+    width: 45vw;
+  }
+
+  .cardSkeleton {
+    width: 96vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .cardContainer {
+    font-size: .1vw;
+    padding: 0vh 0px 2vh 0px;
+    width: 49%
+      }
+
+  .groceryListButton {
+    padding: 4px;
+    
+  }
+
+  .imageSize {
+       width: 100%;
+    border-bottom-style: double;
+  }
+
+  .overlayText {
+    font-size: small;
+    text-decoration: none;
+    height: 20vh;
+    top:23%;
+  }
+}
