@@ -9,7 +9,7 @@ const CardContainer = ({ image, meal, ingredients, list, setList }) => {
     return (
 
         <div className="cardContainer">
-            <img className='imageSize' src={image} />
+            <img className='imageSize' alt="pic" src={image} />
             <h1 className="header">{meal} </h1>
             <div className="overlay" >
                 <div className="overlayText">
